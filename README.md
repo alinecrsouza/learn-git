@@ -40,7 +40,7 @@ $ git commit -m “My first commit”
 
 #### To commit all files
 $ git commit
-> Briefly describe what was done on each file
+> Briefly describe what was done on each file.
 
 #### Commit all modified files (skipping the second stage)
 $ git commit -a -m “Commit message”
@@ -75,14 +75,14 @@ $ git log --since=2.weeks
 
 ### Ignore file or folder (no versioning)
 $ touch .gitignore
-> Create .gitignore file and insert in it the files or directories that should be ignored
+> Create .gitignore file and insert in it the files or directories that should be ignored.
 
 ### Versions
 #### Going back versions
 $ git checkout 066a5b2cb04c61281
->Where "066a5b2cb04c61281" is the commit hash that can be obtained from the git log
+> Where "066a5b2cb04c61281" is the commit hash that can be obtained from the git log.
 
-Remove comits e os arquivos ficam prontos para serem comitados
+#### Remove commits and the files are ready for be committed again
 $ git reset HEAD~1 --soft 
 
 Remove commits e arranca os arquivos associados
