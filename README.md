@@ -26,8 +26,11 @@ $ git status
 
 ### Stages
 * 1st Stage - Untracked files
-* 2nd Stage - Include in what will be committed
+* 2nd Stage - Ready to be commited
+''' 
+To include in what will be committed
 $ git add arquivo.txt
+'''
 * 3rd Stage - commit a file
 $ git commit -m “My first commit”
 
