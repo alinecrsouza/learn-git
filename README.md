@@ -38,38 +38,30 @@ $ git add .
 #### To commit the files
 $ git commit -m “My first commit”
 
+#### To commit all files
+$ git commit
+> Briefly describe what was done on each file
+
+#### Commit all modified files (skipping the second stage)
+$ git commit -a -m “Commit message”
+
 ### Log
 $ git log
-//--- Se um arquivo alterado ele retorna para o segundo estágio (staged) necessitando ser comitado para ser novamente versionado ---//
+> If a file is changed, it returns to the second stage (Ready to be commited). 
 
-Comita vários arquivos
-$ git commit
-//--- Descrever resumidamente o que foi feito em cada arquivo ---//
-
-Adiciona todos arquivos modificados para serem comitados
-$ git add .
-
-Comita todos arquivos modificados (pulando o segundo estágio)
-$ git commt -a -m “Comitando vários arquivos”
-
-Comita todos arquivos modificados (pulando o segundo estágio)
-$ git commt -a -m “Comitando vários arquivos”
-
-Vendo o log
-
-Mostra cada arquivo e o que foi modificado
+#### Shows each file and what was modified
 $ git log -p
 
-Mostra apenas os 2 últimos arquivos que foram modificados
+#### Show only the last 2 files that were modified
 $ git log -p -2
 
-Mostra as estatísticas de todos os commits
+#### Shows statistics of all the commits
 $ git log --stat
 
-Mostra os commits resumida em uma linha
+#### Shows a summary of commits in a row
 $ git log --pretty=online
 
-Mostra os commits resumida em formato diferente
+#### Shows a summary of commits in a custom format
 $ git log --pretty=format:”%h - %an, %ar : %s”
 
 Mostra os commits dos últimos 2 dias
