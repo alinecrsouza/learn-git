@@ -5,13 +5,13 @@ This is a repository to learn how to use Git.
 
 ### Creating your first repository (3 stages):
 
-1. Create repository folder
+#### Create repository folder
 $ mkdir name_repository
 
-2. Enter the folder
+#### Enter the folder
 $ cd name_repository
 
-3. Initializes a repository
+#### Initializes a repository
 $ git init
 > After execute this command inside the repository folder, a hidden .git directory will be created, containing the repository structure. If this directory is deleted, the versioning service of the folder no longer exists.
 
