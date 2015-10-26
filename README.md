@@ -13,7 +13,7 @@ $ cd name_repository
 
 3. Initializes a repository
 $ git init
-//--- After execute this command inside the repository folder where you want versioning, a hidden .git directory will be created, containing the repository structure. If this directory is deleted, the versioning of the folder no longer exists. ---//
+> After execute this command inside the repository folder where you want versioning, a hidden .git directory will be created, containing the repository structure. If this directory is deleted, the versioning of the folder no longer exists.
 
 ### Create a file
 $ touch file.txt
@@ -24,15 +24,14 @@ $ vim file.txt
 ### Check status of the repository
 $ git status
 
-1º Estágio - Untracked file - mostra arquivos que não estão sendo versionados
-
-2º Estagio - Adicionando arquivo ao versionador
+### Stages
+* 1st Stage - Untracked files
+* 2nd Stage - Include in what will be committed
 $ git add arquivo.txt
+* 3rd Stage - commit a file
+$ git commit -m “My first commit”
 
-3º Estágio - Comita um arquivo e controla a versão deste
-$ git commit -m “Meu primeiro Commit”
-
-Mostra detalhes do que foi feito
+### Log
 $ git log
 //--- Se um arquivo alterado ele retorna para o segundo estágio (staged) necessitando ser comitado para ser novamente versionado ---//
 
