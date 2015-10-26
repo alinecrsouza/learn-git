@@ -27,10 +27,10 @@ $ git status
 ### Stages
 * 1st Stage - Untracked files
 * 2nd Stage - Ready to be commited
-''' 
+```
 To include in what will be committed
 $ git add arquivo.txt
-'''
+```
 * 3rd Stage - commit a file
 $ git commit -m “My first commit”
 
@@ -130,8 +130,7 @@ Adicione a chave pública no GITHUB.
 Pegue o conteúdo da chave pública gerada e adicione no GitHub em Accounts → SSHKeys:
 
 $ cat id_rsa.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyHECkr68gz5JOYHfdLvaOq3jWQIq5kHzLe5gRaBGaRORKGr3EkEmksItWs6rtpJ1I0QjoBDJufJ2AZlv19OZbmET+0Nw09lFpGira2sqCZ1Ek9Fy8PwJ1LNjHPodN/AxC5uX99A8di2bcvhs+gkk29ZfqIS49f7r2KZAa+rUib9yFMzRudeVh/siqmOhtQrf+e0MERMCDJeIOBTXpnapchi6a2RS+eNbZWjFfF7dr4nVAKZq3qkG74Sh8HvK8xEmjBnQ1fMXygsgr0pTuYn0k7qzQ9ULwj/iNKRaHDq2WwbEyMOFdVUvY8FBDm0RIsKhDb4RYHy6tEwdzsF9Q+Kg9 jorgito@jis-Ubuntu64Box
-//---minha chave pública ---//
+
 
 Criando um novo repositório
 Para criar um novo repositório é necessário:
