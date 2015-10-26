@@ -13,7 +13,7 @@ $ cd name_repository
 
 3. Initializes a repository
 $ git init
-> After execute this command inside the repository folder, a hidden .git directory will be created, containing the repository structure. If this directory is deleted, the versioning of the folder no longer exists.
+> After execute this command inside the repository folder, a hidden .git directory will be created, containing the repository structure. If this directory is deleted, the versioning service of the folder no longer exists.
 
 ### Create a file
 $ touch file.txt
