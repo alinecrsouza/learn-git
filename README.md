@@ -45,6 +45,9 @@ $ git commit
 #### Commit all modified files (skipping the second stage)
 $ git commit -a -m “Commit message”
 
+#### Back the file to the first stage
+$ git reset HEAD teste2.txt
+
 ### Log
 $ git log
 > If a file is changed, it returns to the second stage (Ready to be commited). 
@@ -64,23 +67,20 @@ $ git log --pretty=online
 #### Shows a summary of commits in a custom format
 $ git log --pretty=format:”%h - %an, %ar : %s”
 
-Mostra os commits dos últimos 2 dias
+#### Shows commits of the last two days
 $ git log --since=2.days
 
-Mostra os commits dos últimas 2 semanas
+#### Shows commits of the last two weeks
 $ git log --since=2.weeks
 
-Ignorar arquivo ou pasta (não versionar)
-Cria arquivo .gitignore, informando nele quais arquivos ou diretórios deverão ser ignorados
+### Ignore file or folder (no versioning)
 $ touch .gitignore
+> Create .gitignore file and insert in it the files or directories that should be ignored
 
-Fluxo de Commits
-Volta arquivo para estágio inicial 
-$ git reset HEAD teste2.txt
-
-Voltando versões
+### Versions
+#### Going back versions
 $ git checkout 066a5b2cb04c61281
-//--- onde “066a5b2cb04c61281” é o hach do arquivo, que pode ser obtido com o git log ---//
+>Where "066a5b2cb04c61281" is the commit hash that can be obtained from the git log
 
 Remove comits e os arquivos ficam prontos para serem comitados
 $ git reset HEAD~1 --soft 
