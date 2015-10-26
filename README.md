@@ -21,7 +21,7 @@ $ touch file.txt
 ### Edit the file
 $ vim file.txt
 
-Verifica status do repositório/arquivo
+### Check status of the repository
 $ git status
 
 1º Estágio - Untracked file - mostra arquivos que não estão sendo versionados
