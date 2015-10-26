@@ -30,7 +30,7 @@ $ git status
 * 3rd Stage - Commited
 
 #### To include in what will be committed
-$ git add arquivo.txt
+$ git add file.txt
 
 #### To include all files
 $ git add .
