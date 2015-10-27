@@ -155,6 +155,14 @@ $ git pull
 #### Brings changes that are in remote master branch to the local master branch
 $ git pull origin master
 
+### Create a remote repository
+#### 1st step
+$ git init --bare
+> Execute this command inside the folder you want to serve as a remote repository.
+
+#### 2nd Step 
+git remote add *alias_repository* ssh://ip/path_of_repository
+
 ### Tags
 #### Create a local tag
 $ git tag 0.1.0
