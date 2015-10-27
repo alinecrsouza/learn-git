@@ -82,50 +82,48 @@ $ touch .gitignore
 $ git checkout 066a5b2cb04c61281
 > Where "066a5b2cb04c61281" is the commit hash that can be obtained from the git log.
 
-#### Remove commits and the files are ready for be committed again
+#### Remove a certain number of commits
+$ git reset HEAD~x
+> Where x is the number of commits that you want to remove.
+
+#### Remove the last commit, but keep the related files
 $ git reset HEAD~1 --soft 
 
-Remove commits e arranca os arquivos associados
+#### Remove the last commit AND the related files
 $ git reset HEAD~1 --hard
 
-Faz o conteúdo do arquivo voltar ao estado original
+#### Makes the file content back to the original state
 $ git checkout -- exemplo.php
 
-Branches (arvores)
-Informa em qual branch você está
+### Branchs
+#### Informs on which branch you are
 $ git branch
 
-Cria um branch
-$ git checkout -b funcionalidade1
+#### Create a branch
+$ git checkout -b functionality1
 
-Troca para branch (master)
+#### Return to master branch 
 $ git checkout master
 
-Gruda branch a outro
-$ git merge funcionalidade1
+#### Merge functionality1 branch to master branch
+$ git merge functionality1
 
-Remove commit que fez ultimo merge
-$ git reset HEAD~1 --hard
+#### Reorganizes commits and applies (commit) on master branch
+$ git rebase functionality1
 
-Reorganiza commits e aplica (commit) no branch master
-$ git rebase funcionalidade1
+#### Remove a branch
+$ git branch -D name-of-branch
 
-Para remover um branch utilize o comando:
-$ git branch -D nome-do-branch
-
-
-GITHUB (Repositório remoto do GIT)
-https://github.com
-
-
-Cria/gera chave no PC
+### SSH with authentication key
+#### Create the key
 $ ssh-keygen
-//--- gera duas chaves: id_rsa e id_rsa.pub, sendo .pub pública ---//
+> generate two keys: id_rsa and id_rsa.pub, and .pub is the public one.
 
-Adicione a chave pública no GITHUB. 
-Pegue o conteúdo da chave pública gerada e adicione no GitHub em Accounts → SSHKeys:
-
+#### Add the public key on GitHub
 $ cat id_rsa.pub
+> Take the public key generated content and add on GitHub in Accounts → SSHKeys:
+
+
 
 
 Criando um novo repositório
