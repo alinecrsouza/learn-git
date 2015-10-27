@@ -46,7 +46,7 @@ $ git commit
 $ git commit -a -m “Commit message”
 
 #### Back the file to the first stage
-$ git reset HEAD teste2.txt
+$ git reset HEAD file.txt
 
 ### Log
 $ git log
