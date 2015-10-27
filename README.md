@@ -162,6 +162,9 @@ $ git tag 0.1.0
 #### Sends the local tag and generates a remote release
 $ git push origin master --tags
 
+#### List the tags
+$ git tag
+
 #### To remove the tags created
 $ git tag -d 0.1.0  
 > remove the tag in the local repository
