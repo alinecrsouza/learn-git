@@ -155,7 +155,7 @@ $ git pull
 #### Brings changes that are in remote master branch to the local master branch
 $ git pull origin master
 
-### Create a remote repository
+### Create a remote repository on a local server
 #### 1st step
 $ git init --bare
 > Execute this command inside the folder you want to serve as a remote repository.
