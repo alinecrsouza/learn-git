@@ -1,9 +1,9 @@
 # git-class
 This is a repository to learn how to use Git.
 
-## Main commands:
+## Main commands
 
-### Creating your first repository (3 stages):
+### Creating your first repository (3 stages)
 
 #### Create repository folder
 $ mkdir name_repository
@@ -117,86 +117,53 @@ $ git branch -D name-of-branch
 ### SSH with authentication key
 #### Create the key
 $ ssh-keygen
-> generate two keys: id_rsa and id_rsa.pub, and .pub is the public one.
+> Generate two keys: id_rsa and id_rsa.pub, and .pub is the public one.
 
 #### Add the public key on GitHub
 $ cat id_rsa.pub
-> Take the public key generated content and add on GitHub in Accounts → SSHKeys:
+> Take the public key generated content and add on GitHub in Accounts → SSHKeys.
 
+### Remote repository
+#### Adds remote repository via HTTP
+$ git remote add origin https://github.com/alinecrsouza/name_of_repository
 
+#### Adds remote repository via SSH
+$ git remote add origin git@github.com:alinecrsouza/name_of_repository.git
 
-
-Criando um novo repositório
-Para criar um novo repositório é necessário:
-clicar em Repositories
-clicar em New
-definir o nome do repositório
-informar uma descrição (opicional)
-escolher a opção Public pois a Private somente em contas pagas
-não marcar a opção Initialize this repository with a README (criar apenas o repositório)
-
-Fazendo primeiro push
-
-Remove origin, caso precise
-$ git remote remove origin
-
-Adiciona repositorio remoto via HTTP
-$ git remote add origin https://github.com/ijorgito/urldoGIT
-
-Adiciona repositorio remoto via SSH
-$ git remote add origin git@github.com/ijorgito/git-code-education.git
-
-Envia branch master para o repositorio
+#### Send master branch to the repository
 $ git push origin master
 
-Envia branch funcionalidade1 para o repositorio
-$ git push origin funcionalidade1
+#### Send functionality1 branch to the repository
+$ git push origin functionality1
 
+#### Remove origin, just in case
+$ git remote remove origin
 
+#### Clone a repository
+$ git clone git@github.com:alinecrsouza/name_of_repository.git
+> One last parameter may be passed, suggesting a new repository name, if not informed it will be created with the same name.
 
-Clonando um repositório
-$ git clone git@github.com:ijorgito/git-codeEducation.git
-//---pode ser passado um ultimo parâmetro, sugerindo um nome de diretório, se não for informado será criado o mesmo nome do repositório, nesse caso, “git-codeEducation” ---//
-
-Lista branch locais e remotos
+#### List local and remote branch
 $ git branch -a
 
-Clonando outro branch
-$ git checkout -b funcionalidade1 origin/funcionalidade1
+#### Cloning another branch
+$ git checkout -b functionality1 origin/functionality1
 
-Verifica se todos os arquivos estão sincronizados
+#### Checks if all files are synchronized
 $ git pull
 
-Traz modificações que estão no branch master remoto para local
+#### Brings changes that are in remote master branch to the local master branch
 $ git pull origin master
 
-Cria tag local 
+### Tags
+#### Create a local tag
 $ git tag 0.1.0
 
-Envia tag local e gera release remoto
+#### Sends the local tag and generates a remote release
 $ git push origin master --tags
 
-Remove as tags criadas, utilize os comandos abaixo:
-$ git tag -d 0.1.0  (removendo tag localmente)
-$ git push origin :refs/tags/0.1.0 (removendo tag no repositório remoto)
-
-
-Versionamento semântico
-http://semver.org/
-
-
-
-Referências:
-Markdow
-https://help.github.com/articles/markdown-basics/
-
-
-
-
-
-
-
-
-
-
-
+#### To remove the tags created
+$ git tag -d 0.1.0  
+> remove the tag in the local repository
+$ git push origin :refs/tags/0.1.0
+> remove the tag in the remote repository
