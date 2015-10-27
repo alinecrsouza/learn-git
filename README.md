@@ -165,5 +165,6 @@ $ git push origin master --tags
 #### To remove the tags created
 $ git tag -d 0.1.0  
 > remove the tag in the local repository
+
 $ git push origin :refs/tags/0.1.0
 > remove the tag in the remote repository
