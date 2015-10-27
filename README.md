@@ -128,7 +128,7 @@ $ cat id_rsa.pub
 $ git remote add origin https://github.com/alinecrsouza/name_of_repository
 
 #### Adds remote repository via SSH
-$ git remote add origin git\@github.com:alinecrsouza/name_of_repository.git
+$ git remote add origin git@github.com:alinecrsouza/name_of_repository.git
 
 #### Send master branch to the repository
 $ git push origin master
