@@ -161,7 +161,8 @@ $ git init --bare
 > Execute this command inside the folder you want to serve as a remote repository.
 
 #### 2nd Step 
-git remote add *alias_repository* ssh://ip/path_of_repository
+git remote add alias_repository ssh://ip/path_of_repository
+> Where alias_repository is an alias to the repository, e.g. local (don't use origin).
 
 ### Tags
 #### Create a local tag
