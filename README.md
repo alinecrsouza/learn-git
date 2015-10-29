@@ -172,9 +172,15 @@ $ git remote add alias_repo ssh://ip/path_of_repository
 #### Update the files after commit (3 steps)
 ##### 1st step
 $ git cd hooks
-> Enter inside the hook folder of the bare repository.
+> Enter the hook folder of the bare repository.
 
 ##### 2nd step
+$ vim post-receive
+
+Insert the folowing:
+`#!/bin/sh`
+`GIT_WORK_TREE=destination_folder git checkout -f`
+> Where destination_folder is the path of the destination folder.
 
 
 ### Tags
