@@ -182,7 +182,6 @@ Insert the folowing:
 `GIT_WORK_TREE=destination_folder git checkout -f`
 > Where destination_folder is the path of the destination folder.
 
-
 ### Tags
 #### Create a local tag
 $ git tag 0.1.0
