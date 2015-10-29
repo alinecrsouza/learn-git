@@ -156,13 +156,20 @@ $ git pull
 $ git pull origin master
 
 ### Create a remote repository on a local server
-#### 1st step
+#### 1st Step
+$ mkdir name_repository.git
+> Conventionally, repositories initialized with the --bare flag end in .git.
+
+#### 2nd step
 $ git init --bare
 > Execute this command inside the folder you want to serve as a remote repository.
 
-#### 2nd Step 
+#### 3rd Step 
 git remote add alias_repository ssh://ip/path_of_repository
 > Where alias_repository is an alias to the repository, e.g. local (don't use origin).
+
+### Hooks
+#### Update the files after commit (3 steps)
 
 ### Tags
 #### Create a local tag
