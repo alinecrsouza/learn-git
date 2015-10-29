@@ -162,14 +162,20 @@ $ mkdir name_repository.git
 
 #### 2nd step
 $ git init --bare
-> Execute this command inside the folder you want to serve as a remote repository.
+> Execute this command inside the folder.
 
 #### 3rd Step 
-git remote add alias_repository ssh://ip/path_of_repository
-> Where alias_repository is an alias to the repository, e.g. local (don't use origin).
+$ git remote add alias_repo ssh://ip/path_of_repository
+> Where alias_repo is an alias to the repository, e.g. 'local' (don't use origin).
 
 ### Hooks
 #### Update the files after commit (3 steps)
+##### 1st step
+$ git cd hooks
+> Enter inside the hook folder of the bare repository.
+
+##### 2nd step
+
 
 ### Tags
 #### Create a local tag
